@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>指尖上的產業擴張</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background: #fff8f5;
+      color: #3d2c2c;
+      line-height: 1.8;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(135deg, #ffdbe5, #fff8f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 70px;
+      margin-bottom: 20px;
+      color: #a54869;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #5c4b4b;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 24px;
+      color: #a54869;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .number {
+      font-size: 48px;
+      font-weight: bold;
+      color: #d15b82;
+      margin-bottom: 10px;
+    }
+
+    .timeline {
+      border-left: 4px solid #e6a6b8;
+      margin-top: 40px;
+      padding-left: 30px;
+    }
+
+    .timeline-item {
+      margin-bottom: 40px;
+      background: white;
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .quiz {
+      background: white;
+      border-radius: 24px;
+      padding: 30px;
+      margin-top: 40px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      max-width: 700px;
+    }
+
+    button {
+      display: block;
+      margin-top: 15px;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 999px;
+      background: #f5bfd0;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #d15b82;
+      color: white;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #a54869;
+    }
+
+    footer {
+      background: #3b2d2d;
+      color: white;
+      text-align: center;
+      padding: 40px;
+      margin-top: 60px;
+    }
+
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>指尖上的產業擴張</h1>
+      <p>
+        美甲熱潮席捲社群平台，但在低門檻創業背後，
+        也逐漸浮現制度、證照與消費糾紛問題。
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <h2>美甲產業快速成長</h2>
+
+    <p>
+      社群媒體讓美甲產業快速擴張，
+      從 IG 作品曝光到個人工作室接案，
+      美甲逐漸成為年輕世代的新創業模式。
+    </p>
+
+    <div class="stats">
+
+      <div class="card">
+        <div class="number" data-target="150000000">0</div>
+        <p>IG 美甲相關標籤貼文數</p>
+      </div>
+
+      <div class="card">
+        <div class="number" data-target="1587">0</div>
+        <p>2018 年美甲美睫業家數</p>
+      </div>
+
+      <div class="card">
+        <div class="number" data-target="3523">0</div>
+        <p>2023 年美甲美睫業家數</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+
+    <h2>產業問題逐漸浮現</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>01｜社群平台帶動需求</h3>
+        <p>
+          消費者透過 Instagram 尋找作品風格，
+          美甲師也能透過社群累積客源。
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>02｜證照制度缺乏統一</h3>
+        <p>
+          目前美甲產業證照多為民間機構認證，
+          並沒有法律規定必須持證才能執業。
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>03｜消費糾紛增加</h3>
+        <p>
+          包含成品落差、衛生問題與預約爭議，
+          但許多案件最終沒有正式申訴。
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2>互動小測驗</h2>
+
+    <div class="quiz">
+
+      <p><strong>預約美甲前，最重要的是？</strong></p>
+
+      <button onclick="showResult('只看作品容易忽略安全與衛生問題。')">
+        只看作品漂不漂亮
+      </button>
+
+      <button onclick="showResult('價格不是唯一標準，過低價格可能伴隨風險。')">
+        找最便宜的店家
+      </button>
+
+      <button onclick="showResult('答對了！應該一起確認作品、消毒與溝通方式。')">
+        確認作品、消毒與預約規範
+      </button>
+
+      <div id="result"></div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>
+      改編自《大學報》美甲專題報導
+    </p>
+  </footer>
+
+  <script>
+
+    function showResult(text) {
+      document.getElementById("result").innerText = text;
+    }
+
+    const counters = document.querySelectorAll('.number');
+
+    counters.forEach(counter => {
+
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const speed = target / 100;
+
+      function updateCount() {
+
+        if (count < target) {
+
+          count += speed;
+          counter.innerText = Math.floor(count).toLocaleString();
+
+          requestAnimationFrame(updateCount);
+
+        } else {
+
+          counter.innerText = target.toLocaleString();
+
+        }
+
+      }
+
+      updateCount();
+
+    });
+
+  </script>
+
+</body>
+
+</html>
